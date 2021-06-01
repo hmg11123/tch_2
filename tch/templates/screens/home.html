@@ -1,0 +1,22 @@
+{% extends '../base.html' %}
+<!-- -->
+
+{% block page_title %} HOME | TCH {% endblock page_title %}
+
+<!-- -->
+
+{% block contents %}
+<!-- -->
+
+{% for c in subjectList %}
+
+<ul>
+ <li>{{c.name}}</li>
+</ul>
+
+<hr />
+
+{% endfor %}
+
+<!-- -->
+{% endblock contents %}
